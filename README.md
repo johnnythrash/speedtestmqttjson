@@ -17,6 +17,19 @@ This program uses [paho-mqtt](https://pypi.org/project/paho-mqtt/), [speedtest-c
  schedule.every(6).hours.do(job)
  ```
 
+The json data sent via MQTT is structured as follows:
+
+```json
+{
+   "upload": "upload speed (Mb/s)",
+   "download": "download speed (Mb/s)",
+   "location": "server location",
+   "ping": "ping",
+   "distance": "distance between server and host (miles)",
+   "time": "timestamp of last speed test (MM-DD-YYYY HH:MM:SS) "
+}
+```
+
 ## Getting Started
 
 You should create a file called `config.py` to store mqtt broker and payload information.
