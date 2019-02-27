@@ -47,3 +47,7 @@ mqtt_topic="topic/foo/bar"
 ## Requirements
 
 Required packages can be found in `requirements.txt`
+
+## Optional: Run as Systemd Service
+
+This program can be run as a service on Linux distros that have systemd. Just  modify `/path/to/speedtestmqttjson.py` in `ExecStart` to point to wherever you have placed the python script.

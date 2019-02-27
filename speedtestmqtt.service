@@ -1,0 +1,11 @@
+[Unit]
+Description=Speedtest-cli MQTT For HomeAssistant
+After=multi-user.target
+ 
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python /path/to/speedtestmqttjson.py
+ 
+[Install]
+WantedBy=multi-user.target
